@@ -25,7 +25,7 @@ public class CodeGet {
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
         //gc.setOutputDir(projectPath + "/src/main/java");  //projectPath表示当前目录的路劲，但是可能会存在问题，所以写成了下边这种绝对路径
-        gc.setOutputDir("D:\\ideaProject\\workSpaceThree\\guli_parent\\service\\service-edu"+"/src/main/java");//写成绝对路径
+        gc.setOutputDir("D:\\ideaProject\\workSpaceThree\\guli_parent\\service\\service_edu"+"/src/main/java");//写成绝对路径
 
         gc.setServiceName("%sService");	//去掉Service接口的首字母I，比如自动生成后是UserService，如果不加就是IUserService
         gc.setAuthor("test");//设置作者

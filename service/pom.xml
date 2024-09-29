@@ -14,7 +14,7 @@
     <name>service</name>
     <url>http://maven.apache.org</url>
     <modules>
-        <module>service-edu</module>
+        <module>service_edu</module>
     </modules>
 
     <properties>
@@ -107,4 +107,16 @@
             <artifactId>poi-ooxml</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
 </project>
