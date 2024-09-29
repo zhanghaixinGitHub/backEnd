@@ -7,8 +7,8 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.sercie_base</groupId>
-    <artifactId>sercie_base</artifactId>
+    <groupId>com.atguigu</groupId>
+    <artifactId>service_base</artifactId>
     <packaging>jar</packaging>
 
     <name>sercie_base</name>
