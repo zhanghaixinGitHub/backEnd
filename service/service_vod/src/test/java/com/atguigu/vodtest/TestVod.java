@@ -18,7 +18,7 @@ public class TestVod {
         String accessKeySecret = "jcIGQbMZOoWqxQ9yb4vLUC7uBA5lfc";
 
         String title = "1 - What If I Want to Move Faster - upload by sdk";   //上传之后文件名称
-        String fileName = "C:/Users/ts/Desktop/6 - What If I Want to Move Faster.mp4";  //本地文件路径和名称
+        String fileName = "C:/Users/97956/Desktop/6 - What If I Want to Move Faster.mp4";  //本地文件路径和名称
         //上传视频的方法
         UploadVideoRequest request = new UploadVideoRequest(accessKeyId, accessKeySecret, title, fileName);
         /* 可指定分片上传时每个分片的大小，默认为2M字节 */
