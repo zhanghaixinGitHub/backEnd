@@ -37,8 +37,10 @@ public class MsmController {
         code = RandomUtil.getFourBitRandom();
         Map<String,Object> param = new HashMap<>();
         param.put("code",code);
+        System.out.println("sendMsm   >>>   code : " + code);
         //调用service发送短信的方法
         boolean isSend = msmService.send(param,phone);
+        System.out.println("sendMsm   >>>   isSend : " + isSend);
         if(isSend) {
             //发送成功，把发送成功验证码放到redis里面
             //设置有效时间
