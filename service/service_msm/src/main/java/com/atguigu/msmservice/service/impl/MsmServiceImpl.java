@@ -24,7 +24,7 @@ public class MsmServiceImpl implements MsmService {
         }
 
         DefaultProfile profile =
-                DefaultProfile.getProfile("default", "LTAI5tLsz8VjxDhiwPbxnFNR", "a3CjEFVGCErPFMdCp5J3Ms5c1EBfNe");
+                DefaultProfile.getProfile("default", "", "");
         IAcsClient client = new DefaultAcsClient(profile);
 
         //设置相关固定的参数
