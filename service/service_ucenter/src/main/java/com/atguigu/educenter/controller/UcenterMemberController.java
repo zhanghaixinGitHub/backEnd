@@ -34,6 +34,7 @@ public class UcenterMemberController {
         //调用service方法实现登录
         //返回token值，使用jwt生成
         String token = memberService.login(member);
+        R token1 = R.ok().data("token", token);
         return R.ok().data("token",token);
     }
 
