@@ -31,7 +31,7 @@ public class OrderController {
     public R saveOrder(@PathVariable String courseId, HttpServletRequest request) {
         //创建订单，返回订单号
         String orderNo =
-                orderService.createOrders(courseId, JwtUtils.getMemberIdByJwtToken(request));
+                orderService.createOrders(courseId, "1849739623921967105");
         return R.ok().data("orderId",orderNo);
     }
 
