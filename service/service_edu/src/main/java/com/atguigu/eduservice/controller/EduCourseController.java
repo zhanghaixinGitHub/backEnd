@@ -3,6 +3,7 @@ package com.atguigu.eduservice.controller;
 
 import com.atguigu.common_utils.R;
 import com.atguigu.eduservice.entity.EduCourse;
+import com.atguigu.eduservice.entity.QueryDto;
 import com.atguigu.eduservice.entity.vo.CourseInfoVo;
 import com.atguigu.eduservice.entity.vo.CoursePublishVo;
 import com.atguigu.eduservice.service.EduCourseService;
@@ -26,6 +27,13 @@ public class EduCourseController {
 
     @Autowired
     private EduCourseService courseService;
+
+    @GetMapping("/test")
+    public R test(QueryDto queryDto) {
+        System.out.println("queryDto   >>>   " + queryDto);
+        List<EduCourse> list = courseService.list(null);
+        return R.ok().data("list",list);
+    }
 
     //课程列表 基本实现
     //TODO  完善条件查询带分页
